@@ -7,7 +7,8 @@ const { json, send } = require('micro')
 module.exports = async (request, response) => {
   if (request.method === 'POST') {
     const data = await json(request)
-    send(response, 200, data)
+    console.log(data)
+    send(response, 200, {message: 'received', success: true})
   } else {
     const readme = readFileSync('./README.md', 'utf-8')
     const html = marked(readme)
