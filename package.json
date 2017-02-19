@@ -21,7 +21,7 @@
     "setup": "npm install",
     "standard-fix": "standard --fix",
     "start": "micro",
-    "now-deploy": "npm test && now --npm && now alias"
+    "now-deploy": "npm test && now --npm -e GITHUB_USER=@micro-pr-github-user -e GITHUB_TOKEN=@micro-pr-github-token && now alias"
   },
   "keywords": [
     "microservice",
@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "marked": "0.3.6",
-    "micro": "7.0.6"
+    "micro": "7.0.6",
+    "wreck": "10.0.0"
   }
 }
