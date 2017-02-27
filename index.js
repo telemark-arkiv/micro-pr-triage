@@ -6,10 +6,13 @@ const { json, send } = require('micro')
 const repackData = require('./lib/repack-data')
 const addLabels = require('./lib/add-labels')
 const addAssignes = require('./lib/add-assignes')
+const getPkg = require('./lib/get-pkg')
 
 module.exports = async (request, response) => {
   if (request.method === 'POST') {
-    const data = repackData(await json(request))
+    let data = repackData(await json(request))
+    const pkg = await getPkg(data)
+    data.pkg = pkg
     const assignees = await addAssignes(data)
     const labels = await addLabels(data)
     const result = {
