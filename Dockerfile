@@ -1,11 +1,5 @@
-###########################################################
-#
-# Dockerfile for micro-pr-triage
-#
-###########################################################
-
-# Setting the base to nodejs 7.6.0
-FROM node:7.6.0-alpine
+# Setting the base to nodejs 7.8.0
+FROM node:7.8.0-alpine
 
 # Maintainer
 MAINTAINER Geir Gåsodden

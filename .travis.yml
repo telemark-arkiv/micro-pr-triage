@@ -3,4 +3,3 @@ node_js:
   - "7"
 after_success:
   - npm run coveralls
-  - test $TRAVIS_BRANCH = "master" && npm i -g now && now -t=$NOW_TOKEN --npm -e GITHUB_USER=@micro-pr-github-user -e GITHUB_TOKEN=@micro-pr-github-token && now -t=$NOW_TOKEN alias
