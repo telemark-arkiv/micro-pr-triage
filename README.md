@@ -10,4 +10,4 @@ Triage PRs from GitHub webhooks
 
 [MIT](LICENSE)
 
-![alt text](https://robots.kebabstudios.party/micro-pr-triage.png "Robohash image of micro-pr-triage")
+![Robohash image of micro-pr-triage](https://robots.kebabstudios.party/micro-pr-triage.png "Robohash image of micro-pr-triage")

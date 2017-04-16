@@ -1,6 +1,6 @@
 {
   "name": "micro-pr-triage",
-  "description": "Microservice for routing requests",
+  "description": "Triage PRs from GitHub webhooks",
   "version": "1.2.0",
   "license": "MIT",
   "private": true,
