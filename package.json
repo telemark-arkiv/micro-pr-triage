@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.8.0"
+    "node": ">=7.9.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -35,6 +35,7 @@
   "bugs": {
     "url": "https://github.com/telemark/micro-pr-triage/issues"
   },
+  "homepage": "https://github.com/telemark/micro-pr-triage",
   "now": {
     "alias": [
       "github.t-fk.win"
