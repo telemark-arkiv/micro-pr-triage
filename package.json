@@ -1,7 +1,7 @@
 {
   "name": "micro-pr-triage",
   "description": "Triage PRs from GitHub webhooks",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -21,7 +21,7 @@
     "setup": "npm install",
     "standard-fix": "standard --fix",
     "start": "micro",
-    "now-deploy": "npm test && now --npm -E production.env && now alias"
+    "now-deploy": "npm test && now --npm -E tfk.env && now alias"
   },
   "keywords": [
     "microservice",
@@ -38,7 +38,7 @@
   "homepage": "https://github.com/telemark/micro-pr-triage",
   "now": {
     "alias": [
-      "github.t-fk.win"
+      "triage.pr.github.t-fk.win"
     ],
     "type": "npm"
   },
@@ -48,12 +48,11 @@
     "nsp": "2.6.3",
     "nyc": "10.2.0",
     "standard": "10.0.2",
-    "test-listen": "1.0.1"
+    "test-listen": "1.0.2"
   },
   "dependencies": {
     "axios": "0.16.1",
     "marked": "0.3.6",
-    "micro": "7.3.2",
-    "wreck": "12.0.0"
+    "micro": "7.3.2"
   }
 }
