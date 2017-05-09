@@ -1,7 +1,7 @@
 {
   "name": "micro-pr-triage",
   "description": "Triage PRs from GitHub webhooks",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.9.0"
+    "node": ">=7.10.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -38,7 +38,7 @@
   "homepage": "https://github.com/telemark/micro-pr-triage",
   "now": {
     "alias": [
-      "triage.pr.github.t-fk.win"
+      "triage.pr.github.tjeneste.win"
     ],
     "type": "npm"
   },
