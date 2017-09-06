@@ -1,7 +1,7 @@
 {
   "name": "micro-pr-triage",
   "description": "Triage PRs from GitHub webhooks",
-  "version": "1.4.18",
+  "version": "1.4.19",
   "license": "MIT",
   "private": true,
   "author": {
@@ -45,7 +45,7 @@
   "devDependencies": {
     "ava": "0.19.1",
     "coveralls": "2.13.1",
-    "nsp": "2.8.0",
+    "nsp": "2.6.3",
     "nyc": "11.2.0",
     "standard": "10.0.3",
     "test-listen": "1.0.2"
