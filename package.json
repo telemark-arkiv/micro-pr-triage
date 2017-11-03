@@ -53,6 +53,6 @@
   "dependencies": {
     "axios": "0.17.0",
     "marked": "0.3.6",
-    "micro": "9.0.0"
+    "micro": "9.0.1"
   }
 }
