@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.10.0"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -21,7 +21,9 @@
     "setup": "npm install",
     "standard-fix": "standard --fix",
     "start": "micro",
-    "now-deploy": "npm test && now --npm -E tfk.env && now alias"
+    "dev": "micro-dev",
+    "deploy": "npm test && now && now alias",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "microservice",
@@ -30,21 +32,26 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/micro-pr-triage.git"
+    "url": "git+https://github.com/telemark/micro-pr-triage.git"
   },
   "bugs": {
     "url": "https://github.com/telemark/micro-pr-triage/issues"
   },
-  "homepage": "https://github.com/telemark/micro-pr-triage",
+  "homepage": "https://github.com/telemark/micro-pr-triage#readme",
   "now": {
     "alias": [
       "triage.pr.github.tjeneste.win"
     ],
-    "type": "npm"
+    "type": "npm",
+    "dotenv": "tfk.env",
+    "engines": {
+      "node": "8.9.4"
+    }
   },
   "devDependencies": {
-    "ava": "0.19.1",
+    "ava": "0.25.0",
     "coveralls": "3.0.0",
+    "micro-dev": "2.2.0",
     "nsp": "3.1.0",
     "nyc": "11.4.1",
     "standard": "10.0.3",
@@ -53,6 +60,6 @@
   "dependencies": {
     "axios": "0.17.1",
     "marked": "0.3.12",
-    "micro": "9.0.2"
+    "micro": "9.1.0"
   }
 }
