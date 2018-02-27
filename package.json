@@ -54,12 +54,12 @@
     "micro-dev": "2.2.0",
     "nsp": "3.2.1",
     "nyc": "11.4.1",
-    "standard": "10.0.3",
+    "standard": "11.0.0",
     "test-listen": "1.1.0"
   },
   "dependencies": {
     "axios": "0.18.0",
-    "marked": "0.3.14",
+    "marked": "0.3.16",
     "micro": "9.1.0"
   }
 }
